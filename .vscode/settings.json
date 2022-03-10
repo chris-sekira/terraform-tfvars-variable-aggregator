@@ -1,0 +1,27 @@
+{
+    "files.eol": "\n",
+    "files.encoding": "utf8",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.useTabStops": false,
+        "editor.tabSize": 2
+    },
+    "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.useTabStops": false,
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.useTabStops": false,
+        "editor.tabSize": 4
+    }
+}

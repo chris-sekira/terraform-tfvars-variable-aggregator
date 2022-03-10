@@ -1,0 +1,42 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "upgrade-devcontainer-terraform-language-server",
+            "detail": "Installs the latest version of the Terraform language server in the devcontainer",
+            "type": "shell",
+            "linux": {
+                "command": "sudo apt-get update && sudo apt-get install -y terraform-ls"
+            },
+            "windows": {
+                "options": {
+                    "shell": {
+                        "executable": "powershell",
+                        "args": [
+                            "-NoLogo",
+                            "-NonInteractive",
+                            "-Command"
+                        ]
+                    }
+                },
+                "command": [
+                    "Add-Type -AssemblyName PresentationCore,PresentationFramework;",
+                    "[System.Windows.MessageBox]::Show('This task is meant to be run in a devcontainer only.\n\nStart the devcontainer and try again.\n\nYou can start the devcontainer by pressing F1 and selecting \\\"Remote-Containers: Rebuild and Reopen in Container\\\"', '(☞ﾟヮﾟ)☞ Howdy!', [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Exclamation);"
+                ]
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": true,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": true,
+                "close": true,
+                "revealProblems": "onProblem"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
